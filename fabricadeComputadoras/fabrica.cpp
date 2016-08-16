@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Computadora.h"
 using namespace std;
 
 int component_selection(int computer_type);
@@ -10,6 +11,7 @@ int main(){
   cout << "Hola, que computadora deceas comprar?\n 1 - Desktop\n 2 - Laptop\n 3 - Netbook\n 4 - Tablet\n" << endl;
   int comp_type;
   cin >> comp_type;
+  //Computadora computadora = Computadora::computadora.create("Laptop");
   component_selection(comp_type);
   component_assembly(comp_type);
   software_instalation(comp_type);
