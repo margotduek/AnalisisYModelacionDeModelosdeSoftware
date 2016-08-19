@@ -1,0 +1,31 @@
+#include "Factory.h"
+#include "Destop.h"
+#include "Laptop.h"
+#include "Netbook.h"
+#include "Tablet.h"
+#include "Computers.h"
+
+using namespace std;
+
+Computers * Factory::create(ComputerType type){
+  if(type == ComputerType::desktop){
+    return Desktop::create();
+  }else if(type == ComputerType::laptp){
+    return Laptop::create();
+  }else if(type == ComputerType::netbook){
+    return Netbook::create();
+  }else if(type == ComputerType::tablet){
+    return Tablet::create();
+  }else{
+    cout << "We don't have that device yet!" <<endl; 
+  }
+}
+
+Factory * Factory::comp = nullptr;
+
+Factory* Factory::getcomp(){
+  if(Factory::comp == nullptr){
+    Factory::comp = new Factory();
+  }
+  return Factory::comp;
+} 

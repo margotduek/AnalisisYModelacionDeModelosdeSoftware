@@ -1,0 +1,11 @@
+Hay patrones de diseño y patrones de arquitectura:
+  - Diseño 
+    * Creación 
+    * Comportamiento 
+    * Estructura
+  - Arquitectura
+
+
+Factory Method
+  Es el método que se usa para poder automatizar la creacion de objetos, esto se hace por medio de las herencias y el polimorfismo
+   

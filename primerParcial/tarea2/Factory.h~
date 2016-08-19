@@ -1,0 +1,13 @@
+#include <string>
+#include "Computers.h"
+#include "ComputerType.h"
+
+
+Class Factory : public Computers{
+ private: 
+  static Factory* comp;
+  Factory() { }
+ public:
+  Computers* create(ComputerType type);
+  static Factory* getcomp();
+};
