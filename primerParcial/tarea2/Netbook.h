@@ -1,8 +1,9 @@
-#include "Computers.h"
+#include "Cop.h"
 
-Class Netbook : public Computers{
+class Netbook : public Computers{
  private:
   Netbook(){}
  public:
+  std::string describe();
   static Netbook* create();
 };

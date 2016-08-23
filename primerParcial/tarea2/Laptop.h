@@ -1,9 +1,10 @@
-#include "Computers.h"
+#include "Cop.h"
 #include <string>
 
-Class Laptop : public Computers{
+class Laptop : public Computers{
  private:
   Laptop(){}
  public:
+  std::string describe();
   static Laptop* create();
 };

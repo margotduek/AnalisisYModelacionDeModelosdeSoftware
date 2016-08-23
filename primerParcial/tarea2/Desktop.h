@@ -1,10 +1,11 @@
-#include "Computers.h"
 #include <string>
 #include <iostream>
+#include "Cop.h"
 
-Class Desktop : public Computers{
+class Desktop : public Cop{
  private:
   Desktop() {}
  public:
-  static Desktop* create();
+  std::string describe();
+  static Desktop * create();
 };

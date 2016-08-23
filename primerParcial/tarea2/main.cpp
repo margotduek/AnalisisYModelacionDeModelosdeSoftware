@@ -5,12 +5,9 @@
 #include "Laptop.h"
 #include "Tablet.h"
 #include <iostream>
-#include <string>
+
 
 using namespace std;
-
-
-
 
 
 int component_selection(int computer_type){

@@ -3,7 +3,7 @@
 
 
 
-Class Factory : public Computers{
+class Factory : public Computers{
  private: 
   static Factory* comp;
   Factory() { }
