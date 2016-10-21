@@ -5,6 +5,8 @@ Examen segundo parcial
 
 #include "Observable.hpp"
 #include <iostream>
+#pragma once
+
 class TrumpObservable : public Observable {
  public:
   void new_note(int id_note);

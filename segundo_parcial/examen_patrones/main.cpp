@@ -45,11 +45,15 @@ int main(){
   trump.registerObserver(&cnn);
 
   std::cout << "Quien eres? \n1.- CNN\n2.- MVS Noticias\n3.- Radio Fórmula\n4.- TV Azteca\n5.- Televisa" << std::endl;
-  switch (int op){
+  int op;
+  std::cin >> op;
+  switch (op){
   case 1:
     {
       std::cout << "De quien vas a publicar?\n1.- Hilarie\n2.- Peña\n3.- Trump" << std::endl;
-      switch (int op2){
+      int op2;
+      std::cin >> op2;
+      switch (op2){
       case 1:
 	{
 	  int id;
@@ -76,7 +80,9 @@ int main(){
   case 2:
     {
      std::cout << "De quien vas a publicar?\n1.- Hilarie\n2.- Peña\n3.- Trump" << std::endl;
-      switch (int op2){
+     int op2;
+     std::cin >> op2; 
+     switch (op2){
       case 1:
 	{
 	  int id;
@@ -103,7 +109,9 @@ int main(){
   case 3:
     {
       std::cout << "De quien vas a publicar?\n1.- Hilarie\n2.- Peña\n3.- Trump" << std::endl;
-      switch (int op2){
+      int op2;
+      std::cin >> op2;
+      switch (op2){
       case 1:
 	{
 	  int id;
@@ -130,7 +138,9 @@ int main(){
   case 4:
     {
       std::cout << "De quien vas a publicar?\n1.- Hilarie\n2.- Peña\n3.- Trump" << std::endl;
-      switch (int op2){
+      int op2;
+      std::cin >> op2;
+      switch (op2){
       case 1:
 	{
 	  int id;
@@ -158,7 +168,9 @@ int main(){
   case 5:
     {
       std::cout << "De quien vas a publicar?\n1.- Hilarie\n2.- Peña\n3.- Trump" << std::endl;
-      switch (int op2){
+      int op2;
+      std::cin >> op2;
+      switch (op2){
       case 1:
 	{
 	  int id;

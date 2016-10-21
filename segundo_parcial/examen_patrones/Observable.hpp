@@ -7,6 +7,9 @@ Examen segundo parcial
 #include <list>
 #include "Observer.hpp"
 
+#ifdef OBSERVABLE
+#define OBSERVABLE
+
 class Observable {
  private:
   std::list<Observer*> observers;
@@ -30,3 +33,4 @@ void Observable::notifyObservers(int data) {
     observer->update(data);
   }
 }
+#endif

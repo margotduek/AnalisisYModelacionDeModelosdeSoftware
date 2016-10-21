@@ -5,6 +5,8 @@ Examen segundo parcial
 
 #include <iostream>
 #include "Observable.hpp"
+#pragma once
+
 class PenaObservable : public Observable {
  public:
   void new_note(int id_note);
